@@ -14,18 +14,27 @@ if opcao == 1:
                 valor=float(input("Insira quanto deseja sacar "))
                 if valor > saldo :
                     print("saldo insuficiente")
+                    tentativa =tentativa -1
+                elif valor > 500:
+                        print("Não pode efetuar um saque maior que R$500")
+                        tentativa =tentativa -1
                 else:
                     saldo = saldo-valor
                     print(f"Seu saldo é: {saldo}")
                     
             elif(tentativa !=4):
                 opcao_saque=int(input("Deseja efetuar mais um saque? \n[1]SIM\n[2]NÃO" ))
+                
                 if(opcao_saque ==1):
                     print(f"Bem vindo! Essa é sua tentativa número: {tentativa} do dia!")
                     valor=float(input("Insira quanto deseja sacar"))
                     
                     if valor > saldo :
                         print("saldo insuficiente")
+                        tentativa =tentativa -1
+                    elif valor > 500:
+                        print("Não pode efetuar um saque maior que R$500")
+                        tentativa =tentativa -1
                     else:
                         saldo = saldo-valor
                         print(f"Seu saldo é: R${saldo}")
