@@ -5,7 +5,7 @@
 #     if letra.upper() in vogais:
 #         print(letra, end ="")
 # print()
-print("----------------------------")
+# print("----------------------------")
 
 #for else
 
@@ -18,8 +18,8 @@ print("----------------------------")
     
 print("FOR RANGE")
 
-# for numero in range(0,21,2):
-#     print(numero, end =" ")
+for numero in range(1,21,2):
+    print(numero, end =" ")
     
 print("------------------------")
     
@@ -28,10 +28,10 @@ print("------------------------")
 #         break
 #     print(numero)
     
-for numero in range(100):
-    if numero == 1:
-        continue
-    print(numero, end=" ")
+# for numero in range(100):
+#     if numero == 1:
+#         continue
+#     print(numero, end=" ")
 
 
 
